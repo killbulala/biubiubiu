@@ -1,2 +1,18 @@
 git checkout biu 切换到biu分支
 git branch zhang 添加新分支zhang
+
+1.开发分支（dev）上的代码达到上线标准，需要合并到master分支
+步骤：
+	1.git checkout dev
+	2.git pull
+	3.git checkout master
+	4.git merge dev
+	5.git push -u origin master
+
+2.当master分支代码改动，需要更新dev分支的代码
+	1.git checkout master
+	2.git pull
+	3.git checkout dev
+	4.git merge master
+	5.git push -u origin dev
+总结，先切换到某一个分支，拉取该分支上的代码，然后切换到master分支，把某一分支的代码merge到master分支，然后提交master分支
