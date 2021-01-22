@@ -24,3 +24,16 @@ git add xxx
 git commit -m 'log'
 git push -u origin dev
 提交时远程分支与当前分支保持一致
+
+
+本地提交代码
+git checkout xxx
+git add . / xx
+git commit -m xx
+git push -u  origin xxx 
+
+
+
+
+
+
