@@ -16,3 +16,11 @@ git branch zhang 添加新分支zhang
 	4.git merge master
 	5.git push -u origin dev
 总结，先切换到某一个分支，拉取该分支上的代码，然后切换到master分支，把某一分支的代码merge到master分支，然后提交master分支
+
+提交本地分支的代码到远程的分支
+git checkout dev
+vi xxx
+git add xxx
+git commit -m 'log'
+git push -u origin dev
+提交时远程分支与当前分支保持一致
