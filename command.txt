@@ -38,3 +38,25 @@ git push -u  origin xxx
 # 20201.26提交代码
 
 
+
+
+
+
+
+GAN, 2014, Generative Adversarial Nets
+DCGANs ,2015, Deep Convolutional Generative Adversarial Networks
+SRGANs, 2016, Super-Rsolution Using a Generative Adversarial network
+StackGAN, 2016， 两个GAN， GAN-I，用于生成64x64低分辨率的图像 GAN-II，基于文字和低分辨率图像生成256x256高分辨率的图片
+NIPS 2016 Tutorial: Generative Adversarial network
+CGAN, Conditional Generative Adversarial network 条件生成-对抗网络
+ACGAN, Auxiliary Classifier GAN 辅助分类器
+LSGAN, Least Squares Generative Adversarial network 最小二乘GAN
+CycleGAN,自动将某一类图片转换成其他一类的图片
+
+
+
+
+
+
+
+
