@@ -53,7 +53,16 @@ ACGAN, Auxiliary Classifier GAN 辅助分类器
 LSGAN, Least Squares Generative Adversarial network 最小二乘GAN
 CycleGAN,自动将某一类图片转换成其他一类的图片
 
-
+1.DCGAN:Deep convolution generative adversarial network
+2.CGAN:Conditional generative adversarial network
+3.WGAN:Wasserstein GAN
+4.SeqGAN::生成文本序列
+5.CycleGAN：自动将某一类图片转换成另外一类图片
+6.LAPGAN:拉普拉斯对抗生成网络
+7.SimGAN：Apple出品的
+8.InfoGAN：是一种能够学习disentangled representation的GAN网络
+9.AC-GAN：Auxiliiary classifier GAN
+10.IRGAN:生成离散样本
 
 
 
