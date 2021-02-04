@@ -76,6 +76,14 @@ Frechet Inception Distance ：弗雷歇距离得分，盗梦空间得分，
 
 
 
+2.4
+RuntimeError: Error(s) in loading state_dict for HiFaceGANGenerator:
+解决模型参数加载不成功的方法：
+1.在加载模型的时候用多GPU加载
+import torch.nn as nn
+model = nn.DaraParallel(model)
+2.load_state_dict()时，添加 strict=False属性
+model.load_state_dict(checkpoint['state_dict'], strict=False)
 
 
 
