@@ -86,4 +86,9 @@ model = nn.DaraParallel(model)
 model.load_state_dict(checkpoint['state_dict'], strict=False)
 
 
+翻拍的数据集分成几大类：
+1.翻拍屏幕，手机平板，电脑等是replay
+2.翻拍打印的东西，是print
+
+
 
