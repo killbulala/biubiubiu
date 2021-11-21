@@ -54,10 +54,7 @@ def generator_anchors(base_size=16, ratios=np.array([0.5, 1, 2]), scales=np.arra
     cx, cy, w, h = xyxy2xywh(base_anchor)
     # 获取不同ratios下的w和h
     ratios_anchors_w, ratios_anchors_h = get_ratios_wh(w, h, ratios)
-    # 还原anchor变现形式 xmin ymin xmax ymax
-    ratios_anchors_w = ratios_anchors_w[:, np.newaxis]
-    ratios_anchors_h = ratios_anchors_h[:, np.newaxis]
-    # 不同ratios变换得到 3 种anchors
+    # 还原anchor变现形式 xmin ymin xmax ymax 不同ratios变换得到 3 种anchors
     ratios_anchors = xywh2xyxy(cx, cy, ratios_anchors_w, ratios_anchors_h)
     # 在经过 3 种不同scales变化得到 9 种anchors  注意 scales是相对于宽高的比率变化
     scales_ratios_anchors = np.vstack([enum_scales_ratios(ratios_anchors[i, :], scales) for i in range(len(ratios))])
